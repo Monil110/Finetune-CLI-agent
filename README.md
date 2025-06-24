@@ -1,20 +1,20 @@
-# Finetune CLI agent - Command-Line Agent
+# Finetune CLI Agent
 
 A command-line agent that generates shell commands based on natural language prompts. Built using fine-tuning techniques to improve command generation accuracy.
 
 ## Features
 
-- Generates accurate shell commands from natural language descriptions
-- Supports various command categories (git, search, archive, python, logs, etc.)
-- Includes comprehensive evaluation framework
-- Fine-tuned model for better command generation
-- Role-based prompt handling
+- Generates accurate shell commands from natural language descriptions  
+- Supports various command categories (git, search, archive, python, logs, etc.)  
+- Includes comprehensive evaluation framework  
+- Fine-tuned model for better command generation  
+- Role-based prompt handling  
 
 ## Prerequisites
 
-- Python 3.8+
-- Git
-- Required Python packages (see `requirements.txt`)
+- Python 3.8+  
+- Git  
+- Required Python packages (see `requirements.txt`)  
 
 ## Installation
 
@@ -22,15 +22,17 @@ A command-line agent that generates shell commands based on natural language pro
 ```bash
 git clone https://github.com/Monil110/finetune-cli-agent.git
 cd finetune-cli-agent
-```
+````
 
 2. Create and activate a virtual environment:
+
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 3. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -38,24 +40,26 @@ pip install -r requirements.txt
 ## Project Structure
 
 ```
-fenrir/
-├── agent.py              # Command-line agent implementation
-├── evaluate.py          # Evaluation framework
-├── evaluation_framework.py  # Core evaluation logic
-├── scoring_metrics.py    # Metric calculation
-├── test_prompts.json    # Test cases for evaluation
-├── results/             # Directory for evaluation results
-└── logs/               # Directory for execution logs
+finetune-cli-agent/
+├── agent.py                # Command-line agent implementation
+├── evaluate.py             # Evaluation framework
+├── evaluation_framework.py # Core evaluation logic
+├── scoring_metrics.py      # Metric calculation
+├── test_prompts.json       # Test cases for evaluation
+├── results/                # Directory for evaluation results
+└── logs/                   # Directory for execution logs
 ```
 
 ## Running the Agent
 
 1. Basic usage:
+
 ```bash
 python agent.py "Your command description here"
 ```
 
 2. With specific options:
+
 ```bash
 python agent.py "Your command" --model-path ./lora_adapter --dry-run
 ```
@@ -96,11 +100,12 @@ python evaluate.py \
 ## Metrics
 
 The evaluation framework measures:
-- Command accuracy
-- BLEU score
-- ROUGE scores (1, 2, L)
-- Plan quality
-- Execution time
+
+* Command accuracy
+* BLEU score
+* ROUGE scores (1, 2, L)
+* Plan quality
+* Execution time
 
 ## Contributing
 
@@ -110,11 +115,7 @@ The evaluation framework measures:
 4. Push to the branch
 5. Create a Pull Request
 
-## License
-
-[Specify your license here]
-
 ## Acknowledgments
 
-- Thanks to the open-source community for contributing to the development tools used in this project
-- Special thanks to the developers of the evaluation metrics used
+* Thanks to the open-source community for contributing to the development tools used in this project
+* Special thanks to the developers of the evaluation metrics used
