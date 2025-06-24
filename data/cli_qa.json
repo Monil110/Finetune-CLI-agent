@@ -1,0 +1,753 @@
+[
+    {
+      "question": "What does the `git status` command do?",
+      "answer": "`git status` displays the state of the working directory and staging area, showing which changes have been staged, which haven't, and which files aren't being tracked by Git.[6]"
+    },
+    {
+      "question": "How do you clone a repository in Git?",
+      "answer": "Use `git clone <repository_url>` to create a local copy of a remote repository.[6]"
+    },
+    {
+      "question": "What is the purpose of `git checkout`?",
+      "answer": "`git checkout` switches branches or restores working tree files, allowing you to move between different versions of your codebase.[6]"
+    },
+    {
+      "question": "How can you view the commit history in Git?",
+      "answer": "Run `git log` to display the commit history for the current branch, including commit hashes, author, date, and messages.[6]"
+    },
+    {
+      "question": "What command initializes a new Git repository?",
+      "answer": "`git init` initializes a new Git repository in the current directory, creating a `.git` subdirectory.[6]"
+    },
+    {
+      "question": "How do you stage changes for commit in Git?",
+      "answer": "Use `git add <file>` to stage changes for commit. To stage all changes, use `git add .`.[6]"
+    },
+    {
+      "question": "How do you commit staged changes in Git?",
+      "answer": "`git commit -m \"commit message\"` commits the staged changes with a descriptive message.[6]"
+    },
+    {
+      "question": "How do you push local commits to a remote repository?",
+      "answer": "Use `git push origin <branch>` to upload local commits to the specified branch on the remote repository.[6]"
+    },
+    {
+      "question": "How do you fetch and merge changes from a remote repository?",
+      "answer": "`git pull` fetches changes from the remote repository and merges them into your current branch.[6]"
+    },
+    {
+      "question": "How do you list all branches in a Git repository?",
+      "answer": "`git branch` lists all local branches. Add `-a` to include remote branches.[6]"
+    },
+    {
+      "question": "How do you create a new branch in Git?",
+      "answer": "Use `git branch <branch_name>` to create a new branch.[6]"
+    },
+    {
+      "question": "How do you switch to another branch in Git?",
+      "answer": "`git checkout <branch_name>` switches to the specified branch.[6]"
+    },
+    {
+      "question": "How do you merge one branch into another in Git?",
+      "answer": "First, switch to the target branch, then run `git merge <source_branch>` to merge changes.[6]"
+    },
+    {
+      "question": "How do you delete a branch in Git?",
+      "answer": "`git branch -d <branch_name>` deletes the specified branch locally.[6]"
+    },
+    {
+      "question": "What does `git remote -v` show?",
+      "answer": "`git remote -v` lists the remote repositories associated with the local repo and their URLs.[6]"
+    },
+    {
+      "question": "How do you add a remote repository in Git?",
+      "answer": "`git remote add <name> <url>` adds a new remote repository.[6]"
+    },
+    {
+      "question": "How do you remove a remote in Git?",
+      "answer": "`git remote remove <name>` deletes the specified remote connection.[6]"
+    },
+    {
+      "question": "How do you stash changes in Git?",
+      "answer": "`git stash` temporarily saves changes that are not ready to be committed, cleaning your working directory.[6]"
+    },
+    {
+      "question": "How do you apply stashed changes in Git?",
+      "answer": "`git stash apply` reapplies the most recently stashed changes.[6]"
+    },
+    {
+      "question": "How do you view all stashes in Git?",
+      "answer": "`git stash list` shows all stashed changes.[6]"
+    },
+    {
+      "question": "How do you remove a file from the staging area in Git?",
+      "answer": "`git reset <file>` removes the file from the staging area but keeps the changes in your working directory.[6]"
+    },
+    {
+      "question": "How do you discard local changes to a file in Git?",
+      "answer": "`git checkout -- <file>` reverts the file to the last committed state.[6]"
+    },
+    {
+      "question": "How do you revert a commit in Git?",
+      "answer": "`git revert <commit_hash>` creates a new commit that undoes the changes from the specified commit.[6]"
+    },
+    {
+      "question": "How do you remove untracked files in Git?",
+      "answer": "`git clean -f` deletes untracked files from the working directory.[6]"
+    },
+    {
+      "question": "How do you view the differences between commits in Git?",
+      "answer": "`git diff <commit1> <commit2>` shows the changes between two commits.[6]"
+    },
+    {
+      "question": "How do you configure your Git username and email?",
+      "answer": "`git config --global user.name \"Your Name\"` and `git config --global user.email \"you@example.com\"` set your user info globally.[6]"
+    },
+    {
+      "question": "How do you see the configuration settings in Git?",
+      "answer": "`git config --list` displays all Git configuration settings.[6]"
+    },
+    {
+      "question": "How do you create a bare Git repository?",
+      "answer": "`git init --bare` initializes a repository without a working directory, used for sharing.[6]"
+    },
+    {
+      "question": "How do you squash commits in Git?",
+      "answer": "Use `git rebase -i <base_commit>` and mark commits as `squash` to combine them into one.[6]"
+    },
+    {
+      "question": "How do you undo the last commit in Git?",
+      "answer": "`git reset --soft HEAD~1` undoes the last commit but keeps changes staged.[6]"
+    },
+    {
+      "question": "What is a detached HEAD in Git?",
+      "answer": "A detached HEAD means you are not on a branch, but on a specific commit, so new commits won't belong to any branch.[6]"
+    },
+    {
+      "question": "How do you rename a branch in Git?",
+      "answer": "`git branch -m <old_name> <new_name>` renames a branch.[6]"
+    },
+    {
+      "question": "How do you force push in Git?",
+      "answer": "`git push --force` overwrites the remote branch with your local branch.[6]"
+    },
+    {
+      "question": "How do you see the commit graph in Git?",
+      "answer": "`git log --graph --oneline` shows a visual representation of the commit history.[6]"
+    },
+    {
+      "question": "How do you create an alias in Git?",
+      "answer": "`git config --global alias.<alias_name> '<git_command>'` creates a shortcut for a Git command.[6]"
+    },
+    {
+      "question": "What is the shebang line in a Bash script?",
+      "answer": "The shebang line (`#!/bin/bash`) at the top of a script specifies the interpreter to execute the script.[7]"
+    },
+    {
+      "question": "How do you make a Bash script executable?",
+      "answer": "Use `chmod +x script.sh` to make your script executable.[7]"
+    },
+    {
+      "question": "How do you run a Bash script?",
+      "answer": "Execute the script with `./script.sh` if it's in your current directory and is executable.[7]"
+    },
+    {
+      "question": "How do you define a variable in Bash?",
+      "answer": "Assign a value with `variable=value` (no spaces around `=`).[7]"
+    },
+    {
+      "question": "How do you print a variable in Bash?",
+      "answer": "Use `echo $variable` to display the value of a variable.[7]"
+    },
+    {
+      "question": "How do you write a for loop in Bash?",
+      "answer": "A basic for loop: `for i in 1 2 3; do echo $i; done`.[7]"
+    },
+    {
+      "question": "How do you write an if statement in Bash?",
+      "answer": "Syntax: `if [ condition ]; then ... fi`.[7]"
+    },
+    {
+      "question": "How do you read user input in Bash?",
+      "answer": "Use `read variable_name` to capture user input.[7]"
+    },
+    {
+      "question": "How do you pass arguments to a Bash script?",
+      "answer": "Arguments are accessed as `$1`, `$2`, etc., within the script.[7]"
+    },
+    {
+      "question": "How do you define a function in Bash?",
+      "answer": "Syntax: `function_name() { commands; }` defines a function.[7]"
+    },
+    {
+      "question": "How do you exit a Bash script with a status code?",
+      "answer": "Use `exit <status_code>` to terminate the script with a specific code.[7]"
+    },
+    {
+      "question": "How do you append output to a file in Bash?",
+      "answer": "Use `command >> file.txt` to append output to a file.[7]"
+    },
+    {
+      "question": "How do you redirect both stdout and stderr in Bash?",
+      "answer": "`command > output.txt 2>&1` redirects both standard output and error to a file.[7]"
+    },
+    {
+      "question": "How do you check if a file exists in Bash?",
+      "answer": "`if [ -f filename ]; then ... fi` checks if a file exists.[7]"
+    },
+    {
+      "question": "How do you loop over files in a directory in Bash?",
+      "answer": "`for file in *; do echo $file; done` loops through all files in the current directory.[7]"
+    },
+    {
+      "question": "How do you schedule a script to run at a specific time in Linux?",
+      "answer": "Use `cron` jobs by editing the crontab with `crontab -e`.[1]"
+    },
+    {
+      "question": "How do you compress files into a tar archive?",
+      "answer": "`tar -cvf archive.tar file1 file2` creates an uncompressed tar archive.[12][13]"
+    },
+    {
+      "question": "How do you extract files from a tar archive?",
+      "answer": "`tar -xvf archive.tar` extracts files from a tar archive.[12][13]"
+    },
+    {
+      "question": "How do you create a gzipped tar archive?",
+      "answer": "`tar -czvf archive.tar.gz file1 file2` creates a gzip-compressed archive.[12][13]"
+    },
+    {
+      "question": "How do you extract a gzipped tar archive?",
+      "answer": "`tar -xzvf archive.tar.gz` extracts a gzip-compressed tar archive.[12][13]"
+    },
+    {
+      "question": "How do you list the contents of a tar archive?",
+      "answer": "`tar -tvf archive.tar` lists the contents of a tar archive.[12][13]"
+    },
+    {
+      "question": "How do you compress a single file using gzip?",
+      "answer": "`gzip filename` compresses the file and replaces it with filename.gz.[9][12]"
+    },
+    {
+      "question": "How do you decompress a .gz file?",
+      "answer": "`gunzip filename.gz` decompresses the file.[9][12]"
+    },
+    {
+      "question": "How do you create a zip archive?",
+      "answer": "`zip archive.zip file1 file2` creates a zip archive containing the specified files.[13]"
+    },
+    {
+      "question": "How do you extract a zip archive?",
+      "answer": "`unzip archive.zip` extracts the contents of a zip file.[13]"
+    },
+    {
+      "question": "How do you recursively zip a directory?",
+      "answer": "`zip -r archive.zip directory/` zips the entire directory and its contents recursively.[11][13]"
+    },
+    {
+      "question": "How do you append files to an existing tar archive?",
+      "answer": "`tar -rvf archive.tar newfile.txt` adds a file to an existing tar archive.[13]"
+    },
+    {
+      "question": "How do you exclude files when creating a tar archive?",
+      "answer": "`tar --exclude='*.txt' -cvf archive.tar directory/` excludes all .txt files.[13]"
+    },
+    {
+      "question": "How do you search for a pattern in a file using grep?",
+      "answer": "`grep 'pattern' filename` searches for lines containing 'pattern' in the file.[16]"
+    },
+    {
+      "question": "How do you perform a case-insensitive search with grep?",
+      "answer": "`grep -i 'pattern' filename` ignores case when searching.[16]"
+    },
+    {
+      "question": "How do you search recursively for a pattern in directories with grep?",
+      "answer": "`grep -r 'pattern' directory/` searches all files in the directory tree.[16]"
+    },
+    {
+      "question": "How do you print only matching text with grep?",
+      "answer": "`grep -o 'pattern' filename` prints only the matched text.[16]"
+    },
+    {
+      "question": "How do you use awk to print the second column of a file?",
+      "answer": "`awk '{print $2}' filename` prints the second column of each line.[16]"
+    },
+    {
+      "question": "How do you use sed to replace text in a file?",
+      "answer": "`sed 's/old/new/g' filename` replaces all occurrences of 'old' with 'new'.[14][16]"
+    },
+    {
+      "question": "How do you delete lines matching a pattern in sed?",
+      "answer": "`sed '/pattern/d' filename` deletes lines containing 'pattern'.[14][16]"
+    },
+    {
+      "question": "How do you use awk to sum values in a column?",
+      "answer": "`awk '{sum += $1} END {print sum}' filename` sums the values in the first column.[16]"
+    },
+    {
+      "question": "How do you chain grep, awk, and sed together?",
+      "answer": "You can use pipes: `grep 'pattern' file | awk '{print $2}' | sed 's/old/new/'` for advanced processing.[14][16]"
+    },
+    {
+      "question": "How do you activate a Python virtual environment?",
+      "answer": "Run `source venv/bin/activate` on Unix or `venv\\Scripts\\activate` on Windows to activate a virtual environment.[15]"
+    },
+    {
+      "question": "How do you create a Python virtual environment?",
+      "answer": "`python3 -m venv venv` creates a new virtual environment named 'venv'.[15]"
+    },
+    {
+      "question": "How do you install packages using pip?",
+      "answer": "`pip install package_name` installs the specified package into the active environment.[15]"
+    },
+    {
+      "question": "How do you list installed packages with pip?",
+      "answer": "`pip list` displays all installed packages in the current environment.[15]"
+    },
+    {
+      "question": "How do you upgrade pip itself?",
+      "answer": "`python -m pip install --upgrade pip` upgrades pip to the latest version.[15]"
+    },
+    {
+      "question": "How do you freeze installed packages to a requirements file?",
+      "answer": "`pip freeze > requirements.txt` saves current packages to a file.[15]"
+    },
+    {
+      "question": "How do you install packages from a requirements file?",
+      "answer": "`pip install -r requirements.txt` installs all packages listed in the requirements file.[15]"
+    },
+    {
+      "question": "How do you deactivate a Python virtual environment?",
+      "answer": "Run `deactivate` to exit the current virtual environment.[15]"
+    },
+    {
+      "question": "How do you remove a package with pip?",
+      "answer": "`pip uninstall package_name` removes the specified package.[15]"
+    },
+    {
+      "question": "How do you check the location of the active Python interpreter?",
+      "answer": "`which python` or `which python3` shows the path to the active interpreter.[15]"
+    },
+    {
+      "question": "How do you check the location of pip in a virtual environment?",
+      "answer": "`which pip` shows the path to pip; it should point to the venv directory when active.[15]"
+    },
+    {
+      "question": "How do you list files in a directory?",
+      "answer": "`ls` lists files and directories in the current directory.[4][19]"
+    },
+    {
+      "question": "How do you see hidden files with ls?",
+      "answer": "`ls -a` lists all files, including hidden ones (those starting with a dot).[19]"
+    },
+    {
+      "question": "How do you display detailed file information with ls?",
+      "answer": "`ls -l` shows detailed information such as permissions, owner, size, and modification date.[19]"
+    },
+    {
+      "question": "How do you change directories in Linux?",
+      "answer": "`cd <directory>` changes the current working directory to the specified one.[20]"
+    },
+    {
+      "question": "How do you go up one directory level?",
+      "answer": "`cd ..` moves up to the parent directory.[20]"
+    },
+    {
+      "question": "How do you remove a file?",
+      "answer": "`rm filename` deletes the specified file.[19][23]"
+    },
+    {
+      "question": "How do you remove a directory?",
+      "answer": "`rm -r directory` deletes a directory and its contents recursively.[19][23]"
+    },
+    {
+      "question": "How do you move a file to another directory?",
+      "answer": "`mv file.txt /path/to/destination/` moves the file to the destination directory.[19][23]"
+    },
+    {
+      "question": "How do you rename a file?",
+      "answer": "`mv oldname.txt newname.txt` renames the file.[19][23]"
+    },
+    {
+      "question": "How do you copy a file?",
+      "answer": "`cp source.txt destination.txt` copies the file to a new location.[20]"
+    },
+    {
+      "question": "How do you copy a directory recursively?",
+      "answer": "`cp -r sourcedir/ destdir/` copies the entire directory and its contents.[20]"
+    },
+    {
+      "question": "How do you display the current directory path?",
+      "answer": "`pwd` prints the current working directory.[20]"
+    },
+    {
+      "question": "How do you create a new directory?",
+      "answer": "`mkdir newdir` creates a new directory named 'newdir'.[20]"
+    },
+    {
+      "question": "How do you remove an empty directory?",
+      "answer": "`rmdir directory` removes an empty directory.[20]"
+    },
+    {
+      "question": "How do you display the manual for a command?",
+      "answer": "`man command` opens the manual page for the specified command.[20]"
+    },
+    {
+      "question": "How do you check network connectivity using ping?",
+      "answer": "`ping hostname` sends ICMP echo requests to test connectivity to a host.[21][24]"
+    },
+    {
+      "question": "How do you limit the number of ping requests?",
+      "answer": "`ping -c 4 hostname` sends four ping requests and then stops.[21][24]"
+    },
+    {
+      "question": "How do you change the interval between ping requests?",
+      "answer": "`ping -i 2 hostname` sends requests every two seconds.[24]"
+    },
+    {
+      "question": "How do you specify the packet size in ping?",
+      "answer": "`ping -s 128 hostname` sets the packet size to 128 bytes.[24]"
+    },
+    {
+      "question": "How do you perform a flood ping?",
+      "answer": "`ping -f hostname` sends packets as fast as possible (requires root privileges).[24]"
+    },
+    {
+      "question": "How do you download a file using curl?",
+      "answer": "`curl -O http://example.com/file.txt` downloads a file from the specified URL.[1]"
+    },
+    {
+      "question": "How do you send a GET request with curl?",
+      "answer": "`curl http://example.com` sends a GET request to the URL.[1]"
+    },
+    {
+      "question": "How do you send a POST request with curl?",
+      "answer": "`curl -d 'param1=value1' -X POST http://example.com` sends a POST request with data.[1]"
+    },
+    {
+      "question": "How do you transfer files securely using scp?",
+      "answer": "`scp file.txt user@remote:/path/` copies a file to a remote server over SSH.[1]"
+    },
+    {
+      "question": "How do you copy a directory recursively with scp?",
+      "answer": "`scp -r dir/ user@remote:/path/` copies an entire directory to a remote server.[1]"
+    },
+    {
+      "question": "How do you change permissions on a file?",
+      "answer": "`chmod 755 file.sh` sets the file's permissions to rwxr-xr-x.[22]"
+    },
+    {
+      "question": "How do you give execute permission to a script?",
+      "answer": "`chmod +x script.sh` adds execute permission for the user.[22]"
+    },
+    {
+      "question": "How do you change the owner of a file?",
+      "answer": "`chown user file.txt` changes the file's owner to 'user'.[22]"
+    },
+    {
+      "question": "How do you change the group ownership of a file?",
+      "answer": "`chown :group file.txt` changes the file's group ownership.[22]"
+    },
+    {
+      "question": "Who can run chmod on a file?",
+      "answer": "The file's owner or the root user can change permissions with chmod.[22]"
+    },
+    {
+      "question": "Who can run chown on a file?",
+      "answer": "Only the root user or a process with the CAP_CHOWN capability can change file ownership.[22]"
+    },
+    {
+      "question": "How do you recursively change permissions for all files in a directory?",
+      "answer": "`chmod -R 755 directory/` changes permissions for all files and subdirectories.[22]"
+    },
+    {
+      "question": "How do you recursively change ownership for all files in a directory?",
+      "answer": "`chown -R user:group directory/` changes ownership for all files and subdirectories.[22]"
+    },
+    {
+      "question": "How do you check the permissions of a file?",
+      "answer": "`ls -l file.txt` displays the file's permissions, owner, and group.[19]"
+    },
+    {
+      "question": "How do you find files by name in Linux?",
+      "answer": "`find . -name 'filename'` searches for files with the given name in the current directory and subdirectories.[1]"
+    },
+    {
+      "question": "How do you display the first 10 lines of a file?",
+      "answer": "`head file.txt` shows the first 10 lines by default.[1]"
+    },
+    {
+      "question": "How do you display the last 10 lines of a file?",
+      "answer": "`tail file.txt` shows the last 10 lines by default.[1]"
+    },
+    {
+      "question": "How do you monitor a file for changes in real time?",
+      "answer": "`tail -f file.txt` displays new lines as they are added to the file.[1]"
+    },
+    {
+      "question": "How do you count the number of lines in a file?",
+      "answer": "`wc -l file.txt` returns the number of lines in the file.[1]"
+    },
+    {
+      "question": "How do you sort the contents of a file?",
+      "answer": "`sort file.txt` sorts the lines in alphabetical order.[1]"
+    },
+    {
+      "question": "How do you remove duplicate lines from a file?",
+      "answer": "`sort file.txt | uniq` sorts and removes duplicate lines.[1]"
+    },
+    {
+      "question": "How do you schedule a one-time task in the future?",
+      "answer": "Use the `at` command: `echo 'command' | at 10:00` schedules the command for 10:00.[1]"
+    },
+    {
+      "question": "How do you display disk usage for a directory?",
+      "answer": "`du -sh directory/` shows the total disk usage in human-readable format.[1]"
+    },
+    {
+      "question": "How do you display free disk space?",
+      "answer": "`df -h` shows disk space usage for all mounted filesystems in human-readable format.[1]"
+    },
+    {
+      "question": "How do you check running processes?",
+      "answer": "`ps aux` lists all running processes with details.[1]"
+    },
+    {
+      "question": "How do you kill a process by PID?",
+      "answer": "`kill <PID>` sends a termination signal to the process with the given PID.[1]"
+    },
+    {
+      "question": "How do you search for a running process by name?",
+      "answer": "`ps aux | grep processname` filters the process list for the specified name.[1]"
+    },
+    {
+      "question": "How do you display the current user's username?",
+      "answer": "`whoami` prints the current user's username.[1]"
+    },
+    {
+      "question": "How do you switch users in the terminal?",
+      "answer": "`su - username` switches to another user account.[1]"
+    },
+    {
+      "question": "How do you display system uptime?",
+      "answer": "`uptime` shows how long the system has been running.[1]"
+    },
+    {
+      "question": "How do you check the system's IP address?",
+      "answer": "`ip addr` or `ifconfig` displays network interfaces and IP addresses.[1]"
+    },
+    {
+      "question": "How do you display environment variables?",
+      "answer": "`printenv` lists all environment variables.[1]"
+    },
+    {
+      "question": "How do you set an environment variable for the current session?",
+      "answer": "`export VAR=value` sets an environment variable for the session.[1]"
+    },
+    {
+      "question": "How do you find the path of a command?",
+      "answer": "`which command` shows the full path of the executable.[1]"
+    },
+    {
+      "question": "How do you display the current date and time?",
+      "answer": "`date` prints the current date and time.[1]"
+    },
+    {
+      "question": "How do you create a symbolic link?",
+      "answer": "`ln -s target linkname` creates a symbolic link to the target file or directory.[1]"
+    },
+    {
+      "question": "How do you create a hard link?",
+      "answer": "`ln target linkname` creates a hard link to the target file.[1]"
+    },
+    {
+      "question": "How do you display the contents of a file?",
+      "answer": "`cat file.txt` prints the file's contents to the terminal.[1]"
+    },
+    {
+      "question": "How do you concatenate multiple files?",
+      "answer": "`cat file1.txt file2.txt > combined.txt` merges files into one.[1]"
+    },
+    {
+      "question": "How do you display file type information?",
+      "answer": "`file filename` describes the type of a file.[1]"
+    },
+    {
+      "question": "How do you compare two files?",
+      "answer": "`diff file1.txt file2.txt` shows the differences between two files.[1]"
+    },
+    {
+      "question": "How do you find the size of a file?",
+      "answer": "`ls -lh filename` shows the file size in a human-readable format.[19]"
+    },
+    {
+      "question": "How do you change the modification time of a file?",
+      "answer": "`touch filename` updates the file's modification timestamp or creates the file if it doesn't exist.[7]"
+    },
+    {
+      "question": "How do you run a command in the background?",
+      "answer": "Append `&` to the command: `command &`.[1]"
+    },
+    {
+      "question": "How do you bring a background job to the foreground?",
+      "answer": "Use `fg` to bring the most recent background job to the foreground.[1]"
+    },
+    {
+      "question": "How do you list background jobs?",
+      "answer": "`jobs` lists all background jobs in the current shell.[1]"
+    },
+    {
+      "question": "How do you stop a running process?",
+      "answer": "Press `Ctrl+C` to send an interrupt signal and stop the process.[1]"
+    },
+    {
+      "question": "How do you suspend a process?",
+      "answer": "Press `Ctrl+Z` to suspend a running process and put it in the background.[1]"
+    },
+    {
+      "question": "How do you resume a suspended process in the background?",
+      "answer": "Use `bg` to resume the most recently suspended process in the background.[1]"
+    },
+    {
+      "question": "How do you view logged-in users?",
+      "answer": "`w` or `who` displays currently logged-in users and their activities.[3]"
+    },
+    {
+      "question": "How do you securely connect to a remote server?",
+      "answer": "`ssh user@hostname` establishes a secure encrypted connection to the remote server.[3]"
+    },
+    {
+      "question": "How do you generate SSH keys?",
+      "answer": "`ssh-keygen` creates a new SSH key pair for secure authentication.[3]"
+    },
+    {
+      "question": "How do you copy your SSH public key to a server?",
+      "answer": "`ssh-copy-id user@hostname` copies your public key for passwordless login.[3]"
+    },
+    {
+      "question": "How do you display the current shell?",
+      "answer": "`echo $SHELL` shows the path to the current shell.[1]"
+    },
+      {
+          "question": "How do you undo a 'git add' before committing?",
+          "answer": "Use `git reset HEAD <file>` to unstage a file that was added with `git add`."
+        },
+        {
+          "question": "How can you see which lines in a file were last changed and by whom in Git?",
+          "answer": "`git blame <file>` shows line-by-line authorship and the last commit for each line."
+        },
+        {
+          "question": "How do you revert all local changes and resets the working directory in Git?",
+          "answer": "`git reset --hard` resets the working directory and index to the last commit, discarding all changes."
+        },
+        {
+          "question": "How do you show the difference between the staging area and the last commit in Git?",
+          "answer": "`git diff --cached` shows differences between staged changes and the last commit."
+        },
+        {
+          "question": "How do you delete a remote branch in Git?",
+          "answer": "`git push origin --delete <branch>` removes a branch from the remote repository."
+        },
+        {
+          "question": "How do you add a comment in a Bash script?",
+          "answer": "Start the line with `#` to add a comment in a Bash script."
+        },
+        {
+          "question": "How do you execute multiple commands in one line in Bash?",
+          "answer": "Use `;` to separate commands, e.g., `cd /tmp; ls`."
+        },
+        {
+          "question": "How do you check the exit status of the last command in Bash?",
+          "answer": "The variable `$?` holds the exit status of the last executed command."
+        },
+        {
+          "question": "How do you run a command as another user in Bash?",
+          "answer": "Use `sudo -u <username> <command>` to run a command as another user."
+        },
+        {
+          "question": "How do you create a compressed tar.bz2 archive?",
+          "answer": "`tar -cjvf archive.tar.bz2 files/` creates a bzip2-compressed tar archive."
+        },
+        {
+          "question": "How do you extract a tar.bz2 archive?",
+          "answer": "`tar -xjvf archive.tar.bz2` extracts a bzip2-compressed tar archive."
+        },
+        {
+          "question": "How do you test the integrity of a zip archive?",
+          "answer": "`unzip -t archive.zip` tests the integrity of a zip file."
+        },
+        {
+          "question": "How do you search for files larger than 100MB in Linux?",
+          "answer": "`find . -type f -size +100M` finds files larger than 100MB in the current directory and subdirectories."
+        },
+        {
+          "question": "How do you count the number of words in a file?",
+          "answer": "`wc -w file.txt` returns the number of words in a file."
+        },
+        {
+          "question": "How do you print lines 10 to 20 of a file?",
+          "answer": "`sed -n '10,20p' file.txt` prints lines 10 through 20."
+        },
+        {
+          "question": "How do you replace tabs with spaces in a file using expand?",
+          "answer": "`expand -t 4 file.txt` replaces tabs with four spaces."
+        },
+        {
+          "question": "How do you show the first 5 matches of a pattern using grep?",
+          "answer": "`grep -m 5 'pattern' file.txt` stops searching after 5 matches."
+        },
+        {
+          "question": "How do you create a new empty file from the command line?",
+          "answer": "`touch filename` creates a new empty file or updates the timestamp if it exists."
+        },
+        {
+          "question": "How do you remove all files in a directory except for one specific file?",
+          "answer": "`find . ! -name 'keep.txt' -type f -exec rm {} +` removes all files except 'keep.txt'."
+        },
+        {
+          "question": "How do you check which process is using a specific port?",
+          "answer": "`lsof -i :<port>` or `netstat -tulnp | grep <port>` shows processes using a port."
+        },
+        {
+          "question": "How do you download a file with wget?",
+          "answer": "`wget http://example.com/file.txt` downloads the file from the URL."
+        },
+        {
+          "question": "How do you display the routing table in Linux?",
+          "answer": "`route -n` or `ip route` displays the system's routing table."
+        },
+        {
+          "question": "How do you check DNS resolution from the command line?",
+          "answer": "`nslookup domain.com` or `dig domain.com` checks DNS resolution."
+        },
+        {
+          "question": "How do you recursively change all files in a directory to be readable by everyone?",
+          "answer": "`chmod -R a+r directory/` adds read permission for all users."
+        },
+        {
+          "question": "How do you add a user to a group in Linux?",
+          "answer": "`usermod -aG groupname username` adds a user to a group."
+        },
+        {
+          "question": "How do you check which groups a user belongs to?",
+          "answer": "`groups username` lists all groups a user is a member of."
+        },
+        {
+          "question": "How do you create a new Python virtual environment with a specific Python version?",
+          "answer": "`python3.9 -m venv venv` creates a virtual environment using Python 3.9."
+        },
+        {
+          "question": "How do you show the full path of the currently running Python interpreter?",
+          "answer": "Run `which python` or `which python3` to display the path."
+        },
+        {
+          "question": "How do you upgrade all installed pip packages in a virtual environment?",
+          "answer": "Run `pip list --outdated | awk '{print $1}' | xargs -n1 pip install -U` to upgrade all outdated packages."
+        },
+        {
+          "question": "How do you find and delete files older than 30 days?",
+          "answer": "`find /path/to/files -type f -mtime +30 -delete` deletes files older than 30 days."
+        }
+      
+      
+  ]
+  

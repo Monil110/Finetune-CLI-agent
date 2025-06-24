@@ -1,0 +1,58 @@
+[
+  {
+    "prompt_id": 0,
+    "prompt": "Create a new Git repository and make an initial commit",
+    "base_response": "1. Open your terminal or command prompt and create a new directory for your project. For example, if you're working on a React app, create a folder called \"react-app\" in your home directory.\n\n2. Navigate to the newly created directory using your terminal.\n   ```\n   cd react-app\n   ls -lh\n   # should see something like this:\n   drwxr-xr-r    4 user  wheel   128B Jun 16 09:35 .\n   lrwxrwxrux    1 user",
+    "finetuned_response": null,
+    "base_plan_quality": 1,
+    "base_commands_count": 5
+  },
+  {
+    "prompt_id": 1,
+    "prompt": "Set up a Python virtual environment and install pandas",
+    "base_response": "1. Open your terminal or command prompt.\n2. Create a new directory for your project using `mkdir` command. For example:\n   ```\n   mkdir my_project\n   cd my_Project\n  ```\n3. Navigate to the newly created directory using `cd`.\n4. Install the necessary dependencies using `pip install -r requirements.txt`. This will download and install all the required packages in the virtual environment.\n5. Create the virtualenv using `python -m venv env`. This creates a new virtual environment called \"env\" inside the current directory.\n6. Activ",
+    "finetuned_response": null,
+    "base_plan_quality": 2,
+    "base_commands_count": 7
+  },
+  {
+    "prompt_id": 2,
+    "prompt": "Find all Python files in the current directory that contain 'import numpy'",
+    "base_response": "1. Open your terminal or command prompt and navigate to the directory where you want to search for `import numpy` in Python files. For example, if you want the results in the same directory as your script, use the following command:\n   ```bash\n   cd /path/to/directory\n   python\n   import numpy\n   # Output: Imported 'numpy' module successfully\n   exit()\n   echo \"Done\"\n   sleep 3\n   rm -rf *\n   mkdir results\n   cp -r * results/\n   open results/results.txt\n   tail -f results/",
+    "finetuned_response": null,
+    "base_plan_quality": 1,
+    "base_commands_count": 10
+  },
+  {
+    "prompt_id": 3,
+    "prompt": "Create a compressed archive of all .txt files in the current directory",
+    "base_response": "1. Open your terminal or command prompt and navigate to the directory where you want to compress the text files.\n2. Use the `ls` command to list the contents of the current working directory. This will display a list of all the files and directories in the directory.\n3. Use `grep` to find all the `.txt` files in that list. You can use the `-r` option to recursively search for files, or the `-a` option if you only want to match files with the extension `.txt`. For example:\n\n```bash\n$ grep -ir \"txt\" .\n```",
+    "finetuned_response": null,
+    "base_plan_quality": 1,
+    "base_commands_count": 3
+  },
+  {
+    "prompt_id": 4,
+    "prompt": "List all files modified in the last 24 hours, sorted by modification time",
+    "base_response": "1. Log in to your server using SSH or another remote access tool.\n2. Use the `ls` command to list all files on your server's file system. This will display a list of all files and directories, including their modification times.\n3. Use a scripting language like Bash or Python to parse through the output of `ls`. You can use regular expressions to extract specific information from the output, such as the date and time of the last modification.\n4. Sort the modified files by modification timestamp using the `-r` flag (for reverse order).\n5. Print the sorted list to the console",
+    "finetuned_response": null,
+    "base_plan_quality": 1,
+    "base_commands_count": 5
+  },
+  {
+    "prompt_id": 5,
+    "prompt": "Recursively search for files larger than 100MB and move them to a backup directory",
+    "base_response": "Step 1: Create a new directory for your backup files\nCreate a new folder named \"backup\" in your desired location (e.g., /home/username/backup).\n\nStep2: Set up a cron job to run every hour\nCreate an empty file named \"crontab\" in the \"/etc/cron.d\" directory. In the crontab file, add the following line:\n\n```\n0 * * * 0 sudo mv /path/to/large_files/* /path/.backup/\n``` \n\nThis line will run the `sudo mv",
+    "finetuned_response": null,
+    "base_plan_quality": 1,
+    "base_commands_count": 4
+  },
+  {
+    "prompt_id": 6,
+    "prompt": "Set up a cron job to automatically backup a directory every hour using tar and gzip",
+    "base_response": "1. First, create a new file named `backup_script.sh` in your home directory:\n   ```bash\n   #!/bin/bash\n   \n   echo \"Starting backup script\"",
+    "finetuned_response": null,
+    "base_plan_quality": 0,
+    "base_commands_count": 1
+  }
+]

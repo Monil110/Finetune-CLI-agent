@@ -1,0 +1,4 @@
+2025-06-18 17:01:09,194 - INFO - CLI Agent initialized - Log file: agent_log_20250618_170109.log
+2025-06-18 17:01:09,195 - INFO - Loading base model from: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+2025-06-18 17:01:22,821 - INFO - Loading LoRA adapter from: ./lora_adapter
+2025-06-18 17:01:22,844 - ERROR - Error loading model: Can't find 'adapter_config.json' at './lora_adapter'

@@ -1,0 +1,60 @@
+[
+  {
+    "test_id": "git_branch_create",
+    "prompt": "Create a new Git branch called 'feature-auth' and switch to it",
+    "category": "git",
+    "difficulty": "medium",
+    "expected_commands": ["git checkout -b feature-auth"],
+    "expected_behavior": "Creates and switches to new branch"
+  },
+  {
+    "test_id": "file_search_pattern",
+    "prompt": "You are a search expert. Find all Python files in the current directory that contain the word 'import'. Use the find and grep commands.",
+    "category": "search",
+    "difficulty": "medium",
+    "expected_commands": ["find . -name '*.py' -exec grep -l 'import' {} \\;"],
+    "expected_behavior": "Searches for Python files containing import statements"
+  },
+  {
+    "test_id": "archive_extract",
+    "prompt": "You are an archive expert. Extract the contents of backup.tar.gz to a folder called 'restored'. First create the directory with mkdir -p, then use tar with -xzf.",
+    "category": "archive",
+    "difficulty": "easy",
+    "expected_commands": ["mkdir -p restored", "tar -xzf backup.tar.gz -C restored"],
+    "expected_behavior": "Creates directory and extracts archive"
+  },
+  {
+    "test_id": "virtual_env_setup",
+    "prompt": "You are a Python expert. Create a Python virtual environment called 'myproject' and activate it. Use python -m venv to create and source to activate.",
+    "category": "python",
+    "difficulty": "medium",
+    "expected_commands": ["python -m venv myproject", "source myproject/bin/activate"],
+    "expected_behavior": "Creates and activates virtual environment"
+  },
+  {
+    "test_id": "log_analysis",
+    "prompt": "You are a log analysis expert. Show me the last 50 lines of error.log and count how many contain 'ERROR'. Use tail for the last lines and grep -c for counting.",
+    "category": "logs",
+    "difficulty": "hard",
+    "expected_commands": ["tail -50 error.log", "tail -50 error.log | grep -c 'ERROR'"],
+    "expected_behavior": "Displays log tail and counts error occurrences"
+  },
+  {
+    "test_id": "edge_case_complex_pipe",
+    "prompt": "You are a pipeline expert. Find all .txt files, sort them by size, and save the largest 10 to a file called big_files.txt. Use find, ls, sort, and head in a pipeline.",
+    "category": "complex",
+    "difficulty": "hard",
+    "expected_commands": ["find . -name '*.txt' -exec ls -la {} \\; | sort -k5 -nr | head -10 > big_files.txt"],
+    "expected_behavior": "Complex pipeline with file operations",
+    "edge_case": true
+  },
+  {
+    "test_id": "edge_case_permission_fix",
+    "prompt": "Make all shell scripts in the scripts directory executable but only for the owner",
+    "category": "permissions",
+    "difficulty": "medium",
+    "expected_commands": ["chmod u+x scripts/*.sh"],
+    "expected_behavior": "Sets execute permissions for owner only",
+    "edge_case": true
+  }
+]

@@ -1,0 +1,360 @@
+2025-06-18 16:23:03,356 - INFO - Loaded 7 test prompts
+2025-06-18 16:23:03,357 - INFO - Evaluating fine-tuned model...
+2025-06-18 16:23:03,357 - INFO - Evaluating git_branch_create with finetuned model
+2025-06-18 16:23:03,486 - INFO - Evaluating file_search_pattern with finetuned model
+2025-06-18 16:23:03,764 - INFO - Evaluating archive_extract with finetuned model
+2025-06-18 16:23:03,902 - INFO - Evaluating virtual_env_setup with finetuned model
+2025-06-18 16:23:04,142 - INFO - Evaluating log_analysis with finetuned model
+2025-06-18 16:23:04,357 - INFO - Evaluating edge_case_complex_pipe with finetuned model
+2025-06-18 16:23:04,509 - INFO - Evaluating edge_case_permission_fix with finetuned model
+2025-06-18 17:10:19,472 - INFO - Loaded 7 test prompts
+2025-06-18 17:10:19,474 - INFO - Evaluating fine-tuned model...
+2025-06-18 17:10:19,474 - INFO - Evaluating git_branch_create with finetuned model
+2025-06-18 17:10:44,383 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: the following arguments are required: --model, --adapter
+
+2025-06-18 17:10:44,384 - INFO - Evaluating file_search_pattern with finetuned model
+2025-06-18 17:10:53,628 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: the following arguments are required: --model, --adapter
+
+2025-06-18 17:10:53,629 - INFO - Evaluating archive_extract with finetuned model
+2025-06-18 17:11:02,893 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: the following arguments are required: --model, --adapter
+
+2025-06-18 17:11:02,894 - INFO - Evaluating virtual_env_setup with finetuned model
+2025-06-18 17:11:12,376 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: the following arguments are required: --model, --adapter
+
+2025-06-18 17:11:12,377 - INFO - Evaluating log_analysis with finetuned model
+2025-06-18 17:11:24,768 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: the following arguments are required: --model, --adapter
+
+2025-06-18 17:11:24,769 - INFO - Evaluating edge_case_complex_pipe with finetuned model
+2025-06-18 17:11:34,651 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: the following arguments are required: --model, --adapter
+
+2025-06-18 17:11:34,652 - INFO - Evaluating edge_case_permission_fix with finetuned model
+2025-06-18 17:11:44,310 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: the following arguments are required: --model, --adapter
+
+2025-06-18 17:13:49,102 - INFO - Loaded 7 test prompts
+2025-06-18 17:13:49,103 - INFO - Evaluating fine-tuned model...
+2025-06-18 17:13:49,104 - INFO - Evaluating git_branch_create with finetuned model
+2025-06-18 17:14:19,833 - WARNING - Agent execution timed out
+2025-06-18 17:14:19,834 - INFO - Evaluating file_search_pattern with finetuned model
+2025-06-18 17:14:50,425 - WARNING - Agent execution timed out
+2025-06-18 17:14:50,427 - INFO - Evaluating archive_extract with finetuned model
+2025-06-18 17:15:21,135 - WARNING - Agent execution timed out
+2025-06-18 17:15:21,136 - INFO - Evaluating virtual_env_setup with finetuned model
+2025-06-18 17:15:51,761 - WARNING - Agent execution timed out
+2025-06-18 17:15:51,762 - INFO - Evaluating log_analysis with finetuned model
+2025-06-18 17:16:22,332 - WARNING - Agent execution timed out
+2025-06-18 17:16:22,333 - INFO - Evaluating edge_case_complex_pipe with finetuned model
+2025-06-18 17:16:52,910 - WARNING - Agent execution timed out
+2025-06-18 17:16:52,911 - INFO - Evaluating edge_case_permission_fix with finetuned model
+2025-06-18 17:17:23,607 - WARNING - Agent execution timed out
+2025-06-18 17:18:38,027 - INFO - Loaded 7 test prompts
+2025-06-18 17:18:38,028 - INFO - Evaluating fine-tuned model...
+2025-06-18 17:18:38,028 - INFO - Evaluating git_branch_create with finetuned model
+2025-06-18 17:20:15,085 - WARNING - Agent execution failed: 2025-06-18 17:18:45,855 - INFO - CLI Agent initialized - Log file: agent_log_20250618_171845.log
+2025-06-18 17:18:45,855 - INFO - Loading base model from: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+2025-06-18 17:18:50,809 - INFO - Loading LoRA adapter from: ./lora_adapter
+2025-06-18 17:18:51,016 - WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers and GPU quantization are unavailable.
+2025-06-18 17:18:51,474 - INFO - Model loaded successfully
+2025-06-18 17:18:51,474 - INFO - Processing instruction: Create a new Git branch called 'feature-auth' and switch to it
+2025-06-18 17:18:51,475 - INFO - Generating execution plan...
+2025-06-18 17:18:51,475 - INFO - Generating execution plan for: Create a new Git branch called 'feature-auth' and switch to it
+2025-06-18 17:20:12,241 - INFO - Generated plan: Create a new Git branch called 'feature-auth' and switch to it
+
+Output format:
+1. List the exact shell commands needed
+2. Each command should be in backticks (`) or code blocks (```)
+3. The output should include the directory where the repository is located, the branch name, and the switch to the new branch
+4. Ensure that each line of output is indented to align with the rest of the command
+5. Use comments or markdown syntax to explain the purpose of each command
+
+Examples:
+```
+# List directory and current branch
+cd /path/to/repo
+echo "Current branch: $(git branch)"
+
+# Create new branch named feature-auth
+git checkout -b feature-auth
+
+# Switch to new branch
+git checkout feature-auth
+2025-06-18 17:20:12,242 - INFO - Generated plan: Create a new Git branch called 'feature-auth' and switch to it
+
+Output format:
+1. List the exact shell commands needed
+2. Each command should be in backticks (`) or code blocks (```)
+3. The output should include the directory where the repository is located, the branch name, and the switch to the new branch
+4. Ensure that each line of output is indented to align with the rest of the command
+5. Use comments or markdown syntax to explain the purpose of each command
+
+Examples:
+```
+# List directory and current branch
+cd /path/to/repo
+echo "Current branch: $(git branch)"
+
+# Create new branch named feature-auth
+git checkout -b feature-auth
+
+# Switch to new branch
+git checkout feature-auth
+2025-06-18 17:20:12,246 - INFO - Extracted 1 commands: [') or code blocks (']
+2025-06-18 17:20:12,246 - INFO - Executing step 1/1
+2025-06-18 17:20:12,246 - INFO - Command: ) or code blocks (
+2025-06-18 17:20:12,246 - INFO - Completed in 80.77 seconds
+Traceback (most recent call last):
+  File "C:\Users\MONIL\Desktop\fenrir\agent.py", line 443, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\MONIL\Desktop\fenrir\agent.py", line 420, in main
+    print(f"{status} Step {step['step']}: {step['command']}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 0: character maps to <undefined>
+
+2025-06-18 17:20:15,090 - INFO - Evaluating file_search_pattern with finetuned model
+2025-06-18 17:21:27,556 - WARNING - Agent execution failed: 2025-06-18 17:20:38,273 - INFO - CLI Agent initialized - Log file: agent_log_20250618_172038.log
+2025-06-18 17:20:38,275 - INFO - Loading base model from: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+2025-06-18 17:20:45,209 - INFO - Loading LoRA adapter from: ./lora_adapter
+2025-06-18 17:20:45,932 - WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers and GPU quantization are unavailable.
+2025-06-18 17:20:47,060 - INFO - Model loaded successfully
+2025-06-18 17:20:47,061 - INFO - Processing instruction: You are a search expert. Find all Python files in the current directory that contain the word 'import'. Use the find and grep commands.
+2025-06-18 17:20:47,061 - INFO - Generating execution plan...
+2025-06-18 17:20:47,062 - INFO - Generating execution plan for: You are a search expert. Find all Python files in the current directory that contain the word 'import'. Use the find and grep commands.
+2025-06-18 17:21:24,146 - INFO - Generated plan: You are a search expert. Find all Python files in the current directory that contain the word 'import'. Use the find and grep commands.
+
+Output format:
+1. List the exact shell commands needed
+2. Each command should be in backticks (`) or code blocks (```) to ensure readability.
+3. Output should include any necessary permissions and file ownership information.
+4. Execution time should be included for each command.
+5. A brief description of what the command does.
+2025-06-18 17:21:24,148 - INFO - Generated plan: You are a search expert. Find all Python files in the current directory that contain the word 'import'. Use the find and grep commands.
+
+Output format:
+1. List the exact shell commands needed
+2. Each command should be in backticks (`) or code blocks (```) to ensure readability.
+3. Output should include any necessary permissions and file ownership information.
+4. Execution time should be included for each command.
+5. A brief description of what the command does.
+2025-06-18 17:21:24,152 - INFO - Extracted 1 commands: [') or code blocks (']
+2025-06-18 17:21:24,153 - INFO - Executing step 1/1
+2025-06-18 17:21:24,153 - INFO - Command: ) or code blocks (
+2025-06-18 17:21:24,154 - INFO - Completed in 37.09 seconds
+Traceback (most recent call last):
+  File "C:\Users\MONIL\Desktop\fenrir\agent.py", line 443, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\MONIL\Desktop\fenrir\agent.py", line 420, in main
+    print(f"{status} Step {step['step']}: {step['command']}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 0: character maps to <undefined>
+
+2025-06-18 17:21:27,558 - INFO - Evaluating archive_extract with finetuned model
+2025-06-18 17:22:37,114 - WARNING - Agent execution failed: 2025-06-18 17:21:41,529 - INFO - CLI Agent initialized - Log file: agent_log_20250618_172141.log
+2025-06-18 17:21:41,529 - INFO - Loading base model from: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+2025-06-18 17:21:48,015 - INFO - Loading LoRA adapter from: ./lora_adapter
+2025-06-18 17:21:48,230 - WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers and GPU quantization are unavailable.
+2025-06-18 17:21:48,462 - INFO - Model loaded successfully
+2025-06-18 17:21:48,462 - INFO - Processing instruction: You are an archive expert. Extract the contents of backup.tar.gz to a folder called 'restored'. First create the directory with mkdir -p, then use tar with -xzf.
+2025-06-18 17:21:48,462 - INFO - Generating execution plan...
+2025-06-18 17:21:48,463 - INFO - Generating execution plan for: You are an archive expert. Extract the contents of backup.tar.gz to a folder called 'restored'. First create the directory with mkdir -p, then use tar with -xzf.
+2025-06-18 17:22:33,603 - INFO - Generated plan: You are an archive expert. Extract the contents of backup.tar.gz to a folder called 'restored'. First create the directory with mkdir -p, then use tar with -xzf.
+
+Output format:
+1. List the exact shell commands needed
+2. Each command should be in backticks (`) or code blocks (```) for easy syntax highlighting.
+3. Include comments if necessary.
+4. Use clear and concise language that is easily understandable by non-technical users.
+5. Avoid using unnecessary features like shell functions or loops.
+6. Consider using an automated tool for this task instead of manually typing out every command.
+2025-06-18 17:22:33,603 - INFO - Generated plan: You are an archive expert. Extract the contents of backup.tar.gz to a folder called 'restored'. First create the directory with mkdir -p, then use tar with -xzf.
+
+Output format:
+1. List the exact shell commands needed
+2. Each command should be in backticks (`) or code blocks (```) for easy syntax highlighting.
+3. Include comments if necessary.
+4. Use clear and concise language that is easily understandable by non-technical users.
+5. Avoid using unnecessary features like shell functions or loops.
+6. Consider using an automated tool for this task instead of manually typing out every command.
+2025-06-18 17:22:33,605 - INFO - Extracted 1 commands: [') or code blocks (']
+2025-06-18 17:22:33,605 - INFO - Executing step 1/1
+2025-06-18 17:22:33,605 - INFO - Command: ) or code blocks (
+2025-06-18 17:22:33,605 - INFO - Completed in 45.14 seconds
+Traceback (most recent call last):
+  File "C:\Users\MONIL\Desktop\fenrir\agent.py", line 443, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\MONIL\Desktop\fenrir\agent.py", line 420, in main
+    print(f"{status} Step {step['step']}: {step['command']}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 0: character maps to <undefined>
+
+2025-06-18 17:22:37,116 - INFO - Evaluating virtual_env_setup with finetuned model
+2025-06-18 17:26:56,600 - INFO - Loaded 7 test prompts
+2025-06-18 17:26:56,601 - INFO - Evaluating fine-tuned model...
+2025-06-18 17:26:56,602 - INFO - Evaluating git_branch_create with finetuned model
+2025-06-18 17:27:27,303 - INFO - Evaluating file_search_pattern with finetuned model
+2025-06-18 17:28:58,154 - INFO - Evaluating archive_extract with finetuned model
+2025-06-18 17:30:34,230 - INFO - Evaluating virtual_env_setup with finetuned model
+2025-06-18 17:31:46,601 - INFO - Evaluating log_analysis with finetuned model
+2025-06-18 17:33:24,501 - INFO - Evaluating edge_case_complex_pipe with finetuned model
+2025-06-18 17:35:04,483 - INFO - Evaluating edge_case_permission_fix with finetuned model
+2025-06-18 17:46:52,158 - INFO - Loaded 7 test prompts
+2025-06-18 17:46:52,158 - INFO - Evaluating git_branch_create...
+2025-06-18 17:47:02,121 - INFO - Loaded 7 test prompts
+2025-06-18 17:47:02,121 - INFO - Evaluating git_branch_create...
+2025-06-18 17:47:07,577 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: unrecognized arguments: --no-dry-run
+
+2025-06-18 17:47:07,578 - INFO - Evaluating file_search_pattern...
+2025-06-18 17:47:11,271 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: unrecognized arguments: --no-dry-run
+
+2025-06-18 17:47:11,272 - INFO - Evaluating file_search_pattern...
+2025-06-18 17:47:16,672 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: unrecognized arguments: --no-dry-run
+
+2025-06-18 17:47:16,672 - INFO - Evaluating archive_extract...
+2025-06-18 17:47:20,295 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: unrecognized arguments: --no-dry-run
+
+2025-06-18 17:47:20,296 - INFO - Evaluating archive_extract...
+2025-06-18 17:47:25,685 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: unrecognized arguments: --no-dry-run
+
+2025-06-18 17:47:25,686 - INFO - Evaluating virtual_env_setup...
+2025-06-18 17:47:29,346 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: unrecognized arguments: --no-dry-run
+
+2025-06-18 17:47:29,346 - INFO - Evaluating virtual_env_setup...
+2025-06-18 17:47:34,759 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: unrecognized arguments: --no-dry-run
+
+2025-06-18 17:47:34,760 - INFO - Evaluating log_analysis...
+2025-06-18 17:47:39,812 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: unrecognized arguments: --no-dry-run
+
+2025-06-18 17:47:39,813 - INFO - Evaluating log_analysis...
+2025-06-18 17:47:48,044 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: unrecognized arguments: --no-dry-run
+
+2025-06-18 17:47:48,045 - INFO - Evaluating edge_case_complex_pipe...
+2025-06-18 17:48:02,177 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: unrecognized arguments: --no-dry-run
+
+2025-06-18 17:48:02,178 - INFO - Evaluating edge_case_permission_fix...
+2025-06-18 17:48:15,153 - WARNING - Agent execution failed: usage: agent.py [-h] --model MODEL --adapter ADAPTER [--dry-run]
+                [--interactive]
+                [instruction]
+agent.py: error: unrecognized arguments: --no-dry-run
+
+2025-06-18 17:48:29,145 - INFO - Loaded 7 test prompts
+2025-06-18 17:48:29,145 - INFO - Evaluating git_branch_create...
+2025-06-18 17:48:40,911 - INFO - Loaded 7 test prompts
+2025-06-18 17:48:40,911 - INFO - Evaluating git_branch_create...
+2025-06-18 17:49:13,416 - INFO - Evaluating file_search_pattern...
+2025-06-18 17:49:43,914 - INFO - Evaluating file_search_pattern...
+2025-06-18 17:51:14,086 - WARNING - Agent execution timed out
+2025-06-18 17:51:14,101 - INFO - Evaluating archive_extract...
+2025-06-18 17:51:44,537 - WARNING - Agent execution timed out
+2025-06-18 17:51:44,539 - INFO - Evaluating archive_extract...
+2025-06-18 17:52:20,925 - INFO - Evaluating virtual_env_setup...
+2025-06-18 17:53:26,685 - INFO - Evaluating virtual_env_setup...
+2025-06-18 17:54:00,830 - INFO - Evaluating log_analysis...
+2025-06-18 17:55:35,238 - INFO - Evaluating edge_case_complex_pipe...
+2025-06-18 17:57:25,785 - INFO - Evaluating edge_case_permission_fix...
+2025-06-18 17:59:09,286 - INFO - Loaded 7 test prompts
+2025-06-18 17:59:20,878 - INFO - Loaded 7 test prompts
+2025-06-18 17:59:20,886 - INFO - Evaluating git_branch_create...
+2025-06-18 17:59:20,886 - INFO - Evaluating file_search_pattern...
+2025-06-18 17:59:20,887 - ERROR - Failed to run agent: name 'prompt_data' is not defined
+2025-06-18 17:59:20,887 - INFO - Evaluating archive_extract...
+2025-06-18 17:59:20,887 - ERROR - Failed to run agent: name 'prompt_data' is not defined
+2025-06-18 17:59:20,888 - INFO - Evaluating virtual_env_setup...
+2025-06-18 17:59:20,889 - INFO - Evaluating log_analysis...
+2025-06-18 17:59:20,889 - ERROR - Failed to run agent: name 'prompt_data' is not defined
+2025-06-18 17:59:20,889 - INFO - Evaluating edge_case_complex_pipe...
+2025-06-18 17:59:20,890 - INFO - Evaluating edge_case_permission_fix...
+2025-06-18 17:59:20,890 - ERROR - Failed to run agent: name 'prompt_data' is not defined
+2025-06-18 17:59:20,890 - ERROR - Failed to run agent: name 'prompt_data' is not defined
+2025-06-18 17:59:20,891 - ERROR - Failed to run agent: name 'prompt_data' is not defined
+2025-06-18 17:59:20,891 - ERROR - Failed to run agent: name 'prompt_data' is not defined
+2025-06-18 18:00:24,084 - INFO - Loaded 7 test prompts
+2025-06-18 18:00:24,091 - INFO - Evaluating git_branch_create...
+2025-06-18 18:00:24,092 - INFO - Evaluating file_search_pattern...
+2025-06-18 18:00:24,093 - INFO - Evaluating archive_extract...
+2025-06-18 18:00:24,094 - INFO - Evaluating virtual_env_setup...
+2025-06-18 18:00:24,096 - INFO - Evaluating log_analysis...
+2025-06-18 18:00:24,098 - INFO - Evaluating edge_case_complex_pipe...
+2025-06-18 18:00:24,100 - INFO - Evaluating edge_case_permission_fix...
+2025-06-18 18:00:42,619 - INFO - Loaded 7 test prompts
+2025-06-18 18:00:42,632 - INFO - Evaluating git_branch_create...
+2025-06-18 18:00:42,647 - INFO - Evaluating file_search_pattern...
+2025-06-18 18:00:42,651 - INFO - Evaluating archive_extract...
+2025-06-18 18:00:42,671 - INFO - Evaluating virtual_env_setup...
+2025-06-18 18:00:42,681 - INFO - Evaluating log_analysis...
+2025-06-18 18:00:42,733 - INFO - Evaluating edge_case_complex_pipe...
+2025-06-18 18:00:42,753 - INFO - Evaluating edge_case_permission_fix...
+2025-06-18 18:02:27,699 - WARNING - Agent execution timed out after 120 seconds
+2025-06-18 18:02:28,481 - WARNING - Agent execution timed out after 120 seconds
+2025-06-18 18:02:28,502 - WARNING - Agent execution timed out after 120 seconds
+2025-06-18 18:02:28,581 - WARNING - Agent execution timed out after 120 seconds
+2025-06-18 18:02:28,590 - WARNING - Agent execution timed out after 120 seconds
+2025-06-18 18:02:29,121 - WARNING - Agent execution timed out after 120 seconds
+2025-06-18 18:02:29,353 - WARNING - Agent execution timed out after 120 seconds
+2025-06-18 18:02:43,275 - WARNING - Agent execution timed out after 120 seconds
+2025-06-18 18:02:43,354 - WARNING - Agent execution timed out after 120 seconds
+2025-06-18 18:02:43,447 - WARNING - Agent execution timed out after 120 seconds
+2025-06-18 18:02:43,461 - WARNING - Agent execution timed out after 120 seconds
+2025-06-18 18:02:43,475 - WARNING - Agent execution timed out after 120 seconds
+2025-06-18 18:02:43,482 - WARNING - Agent execution timed out after 120 seconds
+2025-06-18 18:02:43,514 - WARNING - Agent execution timed out after 120 seconds
